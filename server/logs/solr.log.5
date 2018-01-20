@@ -1,0 +1,52 @@
+2018-01-17 02:41:47.848 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-01-17 02:41:50.884 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.0
+2018-01-17 02:41:50.912 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-01-17 02:41:50.913 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/vignesh/tac/solr-7.2.0
+2018-01-17 02:41:51.002 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-01-17T02:41:50.915081Z
+2018-01-17 02:41:51.007 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-01-17 02:41:51.676 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/vignesh/tac/solr-7.2.0/server/solr
+2018-01-17 02:41:51.732 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/vignesh/tac/solr-7.2.0/server/solr/solr.xml
+2018-01-17 02:41:57.232 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/vignesh/tac/solr-7.2.0/server/solr
+2018-01-17 02:41:57.246 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [activities]
+2018-01-17 02:41:57.309 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-01-17 02:41:58.116 INFO  (main) [   ] o.e.j.s.Server Started @15863ms
+2018-01-17 02:41:58.259 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrResourceLoader [activities] Added 53 libs to classloader, from paths: [/home/vignesh/tac/solr-7.2.0/contrib/clustering/lib, /home/vignesh/tac/solr-7.2.0/contrib/extraction/lib, /home/vignesh/tac/solr-7.2.0/contrib/langid/lib, /home/vignesh/tac/solr-7.2.0/contrib/velocity/lib, /home/vignesh/tac/solr-7.2.0/dist]
+2018-01-17 02:41:59.780 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.0
+2018-01-17 02:42:01.076 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.IndexSchema [activities] Schema name=default-config
+2018-01-17 02:42:04.942 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-01-17 02:42:05.134 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.CoreContainer Creating SolrCore 'activities' using configuration from instancedir /home/vignesh/tac/solr-7.2.0/server/solr/activities, trusted=true
+2018-01-17 02:42:05.335 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-01-17 02:42:05.367 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrCore [[activities] ] Opening new SolrCore at [/home/vignesh/tac/solr-7.2.0/server/solr/activities], dataDir=[/home/vignesh/tac/solr-7.2.0/server/solr/activities/data/]
+2018-01-17 02:42:05.510 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-01-17 02:42:07.180 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-01-17 02:42:07.192 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-01-17 02:42:07.263 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-01-17 02:42:07.263 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-01-17 02:42:07.853 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.SolrIndexSearcher Opening [Searcher@45a63100[activities] main]
+2018-01-17 02:42:07.967 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/vignesh/tac/solr-7.2.0/server/solr/activities/conf
+2018-01-17 02:42:08.096 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-01-17 02:42:08.183 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-01-17 02:42:08.304 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-01-17 02:42:08.998 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@45a63100[activities] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_a(7.2.0):C9433/8234:delGen=1)))}
+2018-01-17 02:42:08.998 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-01-17 02:42:08.999 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-01-17 02:42:09.014 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.SolrCore [activities] Registered new searcher Searcher@45a63100[activities] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_a(7.2.0):C9433/8234:delGen=1)))}
+2018-01-17 02:42:16.791 INFO  (qtp2009221452-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1516156935823} status=0 QTime=58
+2018-01-17 02:42:17.075 INFO  (qtp2009221452-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1516156935848} status=0 QTime=307
+2018-01-17 02:42:17.402 INFO  (qtp2009221452-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1516156935848} status=0 QTime=174
+2018-01-17 02:42:21.681 INFO  (qtp2009221452-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1516156935823} status=0 QTime=0
+2018-01-17 02:42:21.947 INFO  (qtp2009221452-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1516156935849&ts=1516156935849} status=503 QTime=1
+2018-01-17 02:42:21.986 INFO  (qtp2009221452-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1516156941573} status=0 QTime=137
+2018-01-17 02:42:22.007 INFO  (qtp2009221452-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/replication params={wt=json&command=details&_=1516156941619} status=0 QTime=123
+2018-01-17 02:42:22.071 INFO  (qtp2009221452-12) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/admin/system params={wt=json&_=1516156941619} status=0 QTime=142
+2018-01-17 02:42:22.141 INFO  (qtp2009221452-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1516156935848} status=0 QTime=191
+2018-01-17 02:45:06.883 INFO  (qtp2009221452-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1516156935823} status=0 QTime=0
+2018-01-17 02:45:07.010 INFO  (qtp2009221452-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1516156935848} status=0 QTime=38
+2018-01-17 02:45:10.438 INFO  (qtp2009221452-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&_=1516157106502} hits=1199 status=0 QTime=107
+2018-01-17 02:46:35.652 INFO  (qtp2009221452-18) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&_=1516157106502} hits=1199 status=0 QTime=1
+2018-01-17 02:53:11.659 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=632475595
+2018-01-17 02:53:11.661 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-01-17 02:53:11.661 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-01-17 02:53:11.661 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-01-17 02:53:11.672 INFO  (coreCloseExecutor-12-thread-1) [   x:activities] o.a.s.c.SolrCore [activities]  CLOSING SolrCore org.apache.solr.core.SolrCore@c2c89a6
+2018-01-17 02:53:11.672 INFO  (coreCloseExecutor-12-thread-1) [   x:activities] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.activities, tag=204245414

@@ -1,0 +1,183 @@
+INFO  - 2018-01-09 19:01:11.134; [   ] org.eclipse.jetty.util.log.Log; Logging initialized @1436ms
+INFO  - 2018-01-09 19:01:11.703; [   ] org.eclipse.jetty.server.Server; jetty-9.3.20.v20170531
+INFO  - 2018-01-09 19:01:11.806; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor [file:///home/vignesh/tac/solr-7.2.0/server/contexts/] at interval 0
+INFO  - 2018-01-09 19:01:12.813; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2018-01-09 19:01:12.915; [   ] org.apache.solr.servlet.SolrDispatchFilter;  ___      _       Welcome to Apache Solr™ version 7.2.0
+INFO  - 2018-01-09 19:01:12.916; [   ] org.apache.solr.servlet.SolrDispatchFilter; / __| ___| |_ _   Starting in standalone mode on port 8983
+INFO  - 2018-01-09 19:01:12.918; [   ] org.apache.solr.servlet.SolrDispatchFilter; \__ \/ _ \ | '_|  Install dir: /home/vignesh/tac/solr-7.2.0
+INFO  - 2018-01-09 19:01:12.960; [   ] org.apache.solr.servlet.SolrDispatchFilter; |___/\___/_|_|    Start time: 2018-01-09T19:01:12.920978Z
+INFO  - 2018-01-09 19:01:13.128; [   ] org.apache.solr.core.SolrResourceLoader; Using system property solr.solr.home: /home/vignesh/tac/solr-7.2.0/example/techproducts/solr
+INFO  - 2018-01-09 19:01:13.145; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /home/vignesh/tac/solr-7.2.0/example/techproducts/solr/solr.xml
+INFO  - 2018-01-09 19:01:15.105; [   ] org.apache.solr.core.CorePropertiesLocator; Found 0 core definitions underneath /home/vignesh/tac/solr-7.2.0/example/techproducts/solr
+INFO  - 2018-01-09 19:01:15.297; [   ] org.eclipse.jetty.server.handler.ContextHandler; Started o.e.j.w.WebAppContext@4c2bb6e0{/solr,file:///home/vignesh/tac/solr-7.2.0/server/solr-webapp/webapp/,AVAILABLE}{/home/vignesh/tac/solr-7.2.0/server/solr-webapp/webapp}
+INFO  - 2018-01-09 19:01:15.319; [   ] org.eclipse.jetty.server.AbstractConnector; Started ServerConnector@484a706e{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+INFO  - 2018-01-09 19:01:15.319; [   ] org.eclipse.jetty.server.Server; Started @5641ms
+INFO  - 2018-01-09 19:01:17.265; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=115
+INFO  - 2018-01-09 19:01:17.382; [   ] org.apache.solr.core.TransientSolrCoreCacheDefault; Allocating transient cache for 2147483647 transient cores
+INFO  - 2018-01-09 19:01:17.394; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=17
+INFO  - 2018-01-09 19:01:17.425; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=15
+INFO  - 2018-01-09 19:01:17.458; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+INFO  - 2018-01-09 19:01:17.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+INFO  - 2018-01-09 19:01:17.626; [   ] org.apache.solr.handler.admin.CoreAdminOperation; core create command name=techproducts&action=CREATE&instanceDir=techproducts&wt=json
+INFO  - 2018-01-09 19:01:17.795; [   x:techproducts] org.apache.solr.core.SolrResourceLoader; [techproducts] Added 54 libs to classloader, from paths: [/home/vignesh/tac/solr-7.2.0/contrib/clustering/lib, /home/vignesh/tac/solr-7.2.0/contrib/extraction/lib, /home/vignesh/tac/solr-7.2.0/contrib/langid/lib, /home/vignesh/tac/solr-7.2.0/contrib/velocity/lib, /home/vignesh/tac/solr-7.2.0/dist]
+INFO  - 2018-01-09 19:01:18.209; [   x:techproducts] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2018-01-09 19:01:18.219; [   x:techproducts] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 7.2.0
+INFO  - 2018-01-09 19:01:18.718; [   x:techproducts] org.apache.solr.schema.IndexSchema; [techproducts] Schema name=example
+INFO  - 2018-01-09 19:01:20.283; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:20.294; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:20.295; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:20.295; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:20.301; [   x:techproducts] org.apache.solr.schema.IndexSchema; Loaded schema example/1.6 with uniqueid field id
+INFO  - 2018-01-09 19:01:20.302; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:20.303; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:20.305; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:20.313; [   x:techproducts] org.apache.solr.rest.RestManager$Registry; Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:20.433; [   x:techproducts] org.apache.solr.core.CoreContainer; Creating SolrCore 'techproducts' using configuration from instancedir /home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts, trusted=true
+INFO  - 2018-01-09 19:01:20.462; [   x:techproducts] org.apache.solr.core.SolrCore; solr.RecoveryStrategy.Builder
+INFO  - 2018-01-09 19:01:20.474; [   x:techproducts] org.apache.solr.core.SolrCore; [[techproducts] ] Opening new SolrCore at [/home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts], dataDir=[/home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts/data/]
+INFO  - 2018-01-09 19:01:20.661; [   x:techproducts] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2018-01-09 19:01:21.242; [   x:techproducts] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2018-01-09 19:01:21.243; [   x:techproducts] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2018-01-09 19:01:21.262; [   x:techproducts] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2018-01-09 19:01:21.262; [   x:techproducts] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2018-01-09 19:01:21.298; [   x:techproducts] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@6c373881[techproducts] main]
+INFO  - 2018-01-09 19:01:21.317; [   x:techproducts] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts/conf
+INFO  - 2018-01-09 19:01:21.321; [   x:techproducts] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts/conf
+INFO  - 2018-01-09 19:01:21.332; [   x:techproducts] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2018-01-09 19:01:21.338; [   x:techproducts] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts/conf
+INFO  - 2018-01-09 19:01:21.338; [   x:techproducts] org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:21.338; [   x:techproducts] org.apache.solr.rest.schema.analysis.ManagedWordSetResource; Loaded 35 words for /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:21.343; [   x:techproducts] org.apache.solr.rest.ManagedResource; Notified 4 observers of /schema/analysis/stopwords/english
+INFO  - 2018-01-09 19:01:21.344; [   x:techproducts] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts/conf
+INFO  - 2018-01-09 19:01:21.345; [   x:techproducts] org.apache.solr.rest.ManagedResource; Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:21.348; [   x:techproducts] org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager; Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:21.357; [   x:techproducts] org.apache.solr.rest.ManagedResource; Notified 4 observers of /schema/analysis/synonyms/english
+INFO  - 2018-01-09 19:01:21.373; [   x:techproducts] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2018-01-09 19:01:21.394; [   x:techproducts] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2018-01-09 19:01:21.407; [   x:techproducts] org.apache.solr.handler.component.SuggestComponent; Initializing SuggestComponent
+INFO  - 2018-01-09 19:01:21.412; [   x:techproducts] org.apache.solr.spelling.suggest.SolrSuggester; init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+INFO  - 2018-01-09 19:01:21.440; [   x:techproducts] org.apache.solr.spelling.suggest.SolrSuggester; Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+INFO  - 2018-01-09 19:01:21.442; [   x:techproducts] org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/vignesh/tac/solr-7.2.0/example/techproducts/solr/techproducts/conf/elevate.xml
+INFO  - 2018-01-09 19:01:21.468; [   x:techproducts] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for 10000ms.
+INFO  - 2018-01-09 19:01:21.658; [   x:techproducts] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@6c373881[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2018-01-09 19:01:21.669; [   x:techproducts] org.apache.solr.update.UpdateLog; Could not find max version in index or recent updates, using new clock 1589142598890553344
+INFO  - 2018-01-09 19:01:21.705; [   x:techproducts] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={name=techproducts&action=CREATE&instanceDir=techproducts&wt=json} status=0 QTime=4078
+INFO  - 2018-01-09 19:01:21.990; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=330
+INFO  - 2018-01-09 19:01:21.995; [   x:techproducts] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2018-01-09 19:01:21.996; [   x:techproducts] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2018-01-09 19:01:21.998; [   x:techproducts] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2018-01-09 19:01:22.023; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts] Registered new searcher Searcher@6c373881[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2018-01-09 19:01:22.274; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1589142599323615232), VS1GB400C3 (1589142599499776000), VDBDB1A16 (1589142599508164608)]} 0 344
+INFO  - 2018-01-09 19:01:22.391; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1589142599560593408), 100-435805 (1589142599630848000)]} 0 90
+INFO  - 2018-01-09 19:01:22.459; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[adata (1589142599668596736), apple (1589142599672791040), asus (1589142599680131072), ati (1589142599692713984), belkin (1589142599715782656), canon (1589142599716831232), corsair (1589142599716831233), dell (1589142599717879808), maxtor (1589142599717879809), samsung (1589142599718928384), ... (11 adds)]} 0 53
+INFO  - 2018-01-09 19:01:22.542; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[3007WFP (1589142599756677120)]} 0 68
+INFO  - 2018-01-09 19:01:22.568; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[SOLR1000 (1589142599830077440)]} 0 12
+INFO  - 2018-01-09 19:01:22.648; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[USD (1589142599880409088), EUR (1589142599900332032), GBP (1589142599901380608), NOK (1589142599916060672)]} 0 36
+INFO  - 2018-01-09 19:01:22.735; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[UTF8TEST (1589142599976878080)]} 0 71
+INFO  - 2018-01-09 19:01:22.760; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[VA902B (1589142600033501184)]} 0 3
+INFO  - 2018-01-09 19:01:22.804; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[0579B002 (1589142600059715584)]} 0 21
+INFO  - 2018-01-09 19:01:22.894; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[GB18030TEST (1589142600161427456)]} 0 58
+INFO  - 2018-01-09 19:01:22.920; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[MA147LL/A (1589142600200224768)]} 0 13
+INFO  - 2018-01-09 19:01:22.958; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1589142600240070656), IW-02 (1589142600241119232)]} 0 4
+INFO  - 2018-01-09 19:01:22.996; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1589142600279916544)]} 0 9
+INFO  - 2018-01-09 19:01:23.076; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={}{add=[SP2514N (1589142600310325248), 6H500F0 (1589142600312422400)]} 0 53
+INFO  - 2018-01-09 19:01:23.087; [   x:techproducts] org.apache.solr.update.DirectUpdateHandler2; start commit{_version_=1589142600377434112,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2018-01-09 19:01:23.114; [   x:techproducts] org.apache.solr.update.SolrIndexWriter; Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@515d4ff4 commitCommandVersion:1589142600377434112
+INFO  - 2018-01-09 19:01:23.678; [   x:techproducts] org.apache.solr.search.SolrIndexSearcher; Opening [Searcher@34f446d6[techproducts] main]
+INFO  - 2018-01-09 19:01:23.686; [   x:techproducts] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@34f446d6[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.0):C32)))}
+INFO  - 2018-01-09 19:01:23.686; [   x:techproducts] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2018-01-09 19:01:23.687; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts] Registered new searcher Searcher@34f446d6[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.2.0):C32)))}
+INFO  - 2018-01-09 19:01:23.688; [   x:techproducts] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2018-01-09 19:01:23.688; [   x:techproducts] org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor; [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 601
+INFO  - 2018-01-09 19:01:38.297; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:01:38.373; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=20
+INFO  - 2018-01-09 19:01:38.419; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=32
+INFO  - 2018-01-09 19:02:42.258; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:02:42.288; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:02:42.304; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=38
+INFO  - 2018-01-09 19:02:52.257; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:03:02.487; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:03:13.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:03:24.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:03:34.479; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:03:38.602; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+INFO  - 2018-01-09 19:03:45.481; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=1
+INFO  - 2018-01-09 19:03:56.484; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=3
+INFO  - 2018-01-09 19:04:07.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:04:18.476; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:04:29.476; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:04:40.479; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:04:51.483; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:05:02.497; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:05:13.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:05:24.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:05:34.480; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:05:45.485; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:05:56.479; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:06:07.480; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:06:18.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:06:29.480; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:06:40.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:06:51.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:07:02.482; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:07:13.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:07:23.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:07:34.482; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:07:45.482; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:07:55.383; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  webapp=/solr path=/select params={q=sd500&wt=json} hits=1 status=0 QTime=14
+INFO  - 2018-01-09 19:07:55.484; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:08:06.480; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:08:07.985; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  webapp=/solr path=/select params={q=sd500&wt=csv} hits=1 status=0 QTime=0
+INFO  - 2018-01-09 19:08:16.204; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  webapp=/solr path=/select params={q=sd500&wt=xml} hits=1 status=0 QTime=0
+INFO  - 2018-01-09 19:08:16.485; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:08:24.866; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  webapp=/solr path=/select params={q=sd500&wt=json} hits=1 status=0 QTime=10
+INFO  - 2018-01-09 19:08:27.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:08:38.482; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=1
+INFO  - 2018-01-09 19:08:49.475; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:09:00.474; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:09:10.490; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:09:21.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:09:32.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:09:43.479; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:09:54.481; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:10:05.477; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:10:15.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:10:25.482; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:10:33.449; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  webapp=/solr path=/select params={q=inStock:false&fl=id,name&wt=json} hits=4 status=0 QTime=17
+INFO  - 2018-01-09 19:10:36.476; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:10:47.479; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:10:57.481; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:11:08.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:11:18.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:11:29.481; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:11:40.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:11:50.480; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:12:00.484; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:12:11.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:12:22.475; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:12:33.478; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:12:43.493; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:12:54.483; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/logging params={wt=json&_=1515524562251&since=0} status=0 QTime=0
+INFO  - 2018-01-09 19:13:03.553; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:13:03.674; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={wt=json&_=1515524497518} status=0 QTime=29
+INFO  - 2018-01-09 19:13:03.699; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=68
+INFO  - 2018-01-09 19:13:03.810; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:13:03.872; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:13:03.883; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=20
+INFO  - 2018-01-09 19:13:22.765; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:13:22.795; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/properties params={wt=json&_=1515525202740} status=0 QTime=0
+INFO  - 2018-01-09 19:13:22.816; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=35
+INFO  - 2018-01-09 19:14:01.197; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:14:01.231; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=24
+INFO  - 2018-01-09 19:14:01.261; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/threads params={wt=json&_=1515525241190} status=0 QTime=37
+INFO  - 2018-01-09 19:14:06.185; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1515524497518} status=0 QTime=0
+INFO  - 2018-01-09 19:14:06.210; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=16
+INFO  - 2018-01-09 19:14:06.283; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json&_=1515524497519} status=0 QTime=64
+INFO  - 2018-01-09 19:15:21.845; [   ] org.eclipse.jetty.server.AbstractConnector; Stopped ServerConnector@484a706e{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+INFO  - 2018-01-09 19:15:21.845; [   ] org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1927963027
+INFO  - 2018-01-09 19:15:21.845; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for registry=solr.node, tag=null
+INFO  - 2018-01-09 19:15:21.846; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for registry=solr.jvm, tag=null
+INFO  - 2018-01-09 19:15:21.846; [   ] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for registry=solr.jetty, tag=null
+INFO  - 2018-01-09 19:15:21.853; [   x:techproducts] org.apache.solr.core.SolrCore; [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@529c0512
+INFO  - 2018-01-09 19:15:21.854; [   x:techproducts] org.apache.solr.metrics.SolrMetricManager; Closing metric reporters for registry=solr.core.techproducts, tag=1385956626
+INFO  - 2018-01-09 19:15:21.882; [   ] org.eclipse.jetty.server.handler.ContextHandler; Stopped o.e.j.w.WebAppContext@4c2bb6e0{/solr,null,UNAVAILABLE}{/home/vignesh/tac/solr-7.2.0/server/solr-webapp/webapp}

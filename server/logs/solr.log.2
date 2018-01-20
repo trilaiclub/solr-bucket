@@ -1,0 +1,280 @@
+2018-01-19 04:28:18.141 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-01-19 04:28:19.021 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.0
+2018-01-19 04:28:19.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-01-19 04:28:19.023 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/vignesh/tac/solr-7.2.0
+2018-01-19 04:28:19.055 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-01-19T04:28:19.024514Z
+2018-01-19 04:28:19.056 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-01-19 04:28:19.292 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/vignesh/tac/solr-7.2.0/server/solr
+2018-01-19 04:28:19.328 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/vignesh/tac/solr-7.2.0/server/solr/solr.xml
+2018-01-19 04:28:21.210 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/vignesh/tac/solr-7.2.0/server/solr
+2018-01-19 04:28:21.211 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [activities]
+2018-01-19 04:28:21.220 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-01-19 04:28:21.423 INFO  (main) [   ] o.e.j.s.Server Started @5318ms
+2018-01-19 04:28:21.442 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrResourceLoader [activities] Added 53 libs to classloader, from paths: [/home/vignesh/tac/solr-7.2.0/contrib/clustering/lib, /home/vignesh/tac/solr-7.2.0/contrib/extraction/lib, /home/vignesh/tac/solr-7.2.0/contrib/langid/lib, /home/vignesh/tac/solr-7.2.0/contrib/velocity/lib, /home/vignesh/tac/solr-7.2.0/dist]
+2018-01-19 04:28:21.874 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.0
+2018-01-19 04:28:22.376 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.IndexSchema [activities] Schema name=default-config
+2018-01-19 04:28:24.333 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-01-19 04:28:24.427 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.CoreContainer Creating SolrCore 'activities' using configuration from instancedir /home/vignesh/tac/solr-7.2.0/server/solr/activities, trusted=true
+2018-01-19 04:28:24.504 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-01-19 04:28:24.513 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrCore [[activities] ] Opening new SolrCore at [/home/vignesh/tac/solr-7.2.0/server/solr/activities], dataDir=[/home/vignesh/tac/solr-7.2.0/server/solr/activities/data/]
+2018-01-19 04:28:24.567 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-01-19 04:28:25.690 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-01-19 04:28:25.699 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-01-19 04:28:25.804 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-01-19 04:28:25.804 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-01-19 04:28:26.306 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.SolrIndexSearcher Opening [Searcher@29939631[activities] main]
+2018-01-19 04:28:26.350 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/vignesh/tac/solr-7.2.0/server/solr/activities/conf
+2018-01-19 04:28:26.412 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-01-19 04:28:26.423 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-01-19 04:28:26.457 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-01-19 04:28:26.587 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@29939631[activities] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(7.2.0):C9433)))}
+2018-01-19 04:28:26.588 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-01-19 04:28:26.588 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-01-19 04:28:26.604 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.SolrCore [activities] Registered new searcher Searcher@29939631[activities] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(7.2.0):C9433)))}
+2018-01-19 04:32:43.227 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tf=on&tv=true&fl=id,+clue&_=1516161541424} hits=9433 status=0 QTime=129
+2018-01-19 04:33:07.938 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&df=true&tf=on&tv=true&fl=id,+clue&_=1516161541424} hits=9433 status=0 QTime=8
+2018-01-19 04:33:54.724 INFO  (qtp257513673-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=true&indent=true&fl=id,+clue&tv.payloads=true&tv.df=true&tv.tf=true&tv.offsets=true&tv.fl=includes&_=1516161541424} hits=9433 status=0 QTime=0
+2018-01-19 04:34:22.486 INFO  (qtp257513673-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=true&indent=true&fl=id,+clue&tv.payloads=true&tv.df=true&tv.tf=true&tv.offsets=true&tv.fl=clue&_=1516161541424} hits=9433 status=0 QTime=0
+2018-01-19 04:34:41.349 INFO  (qtp257513673-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=true&indent=true&fl=id,+clue&tv.payloads=true&tv.df=true&tv.tf=true&tv.offsets=true&tv.fl=clue&wt=xml&_=1516161541424} hits=9433 status=0 QTime=0
+2018-01-19 04:35:40.539 INFO  (qtp257513673-18) [   x:activities] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /tvrh,class = solr.SearchHandler,attributes = {startup=lazy, name=/tvrh, class=solr.SearchHandler},args = {defaults={tv=true,df=_text_},last-components=[tvComponent]}} 
+2018-01-19 04:35:40.643 INFO  (qtp257513673-18) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=*:*&fl=id,clue&start=0&rows=100&wt=json} hits=9433 status=0 QTime=103
+2018-01-19 17:58:29.988 INFO  (qtp257513673-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1516384708967} status=0 QTime=1
+2018-01-19 17:58:30.145 INFO  (qtp257513673-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1516384708968} status=0 QTime=141
+2018-01-19 18:03:06.508 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv.df=true&tv.tf=true&tv.tf_idf=true&_=1516384709836} hits=9433 status=0 QTime=0
+2018-01-19 18:05:44.874 INFO  (qtp257513673-12) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.df=true&tv.tf=true&tv.tf_idf=true&_=1516384709836} hits=9433 status=0 QTime=0
+2018-01-19 18:06:39.088 INFO  (qtp257513673-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.df=true&tv.tf=true&tv.fl=clue&tv.tf_idf=true&_=1516384709836} hits=9433 status=0 QTime=0
+2018-01-19 18:07:39.629 INFO  (qtp257513673-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.all=true&tv.fl=clue&_=1516384709836} hits=9433 status=0 QTime=0
+2018-01-19 18:08:42.469 INFO  (qtp257513673-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.all=true&tv.fl=clue&wt=xml&_=1516384709836} hits=9433 status=0 QTime=8
+2018-01-19 18:09:07.119 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.all=true&fl=id,+clue&tv.fl=clue&wt=xml&_=1516384709836} hits=9433 status=0 QTime=0
+2018-01-19 18:09:15.508 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&fl=id,+clue&wt=xml&_=1516384709836} hits=9433 status=0 QTime=0
+2018-01-19 18:15:47.069 ERROR (qtp257513673-20) [   x:activities] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field: includes
+	at org.apache.solr.handler.component.TermVectorComponent.process(TermVectorComponent.java:224)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2018-01-19 18:15:47.069 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=*:*&fl=id,includes&start=0&rows=10&wt=xml} hits=9433 status=400 QTime=8
+2018-01-19 18:16:07.199 INFO  (qtp257513673-12) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=*:*&fl=id,clue&start=0&rows=10&wt=xml} hits=9433 status=0 QTime=1
+2018-01-19 18:17:08.737 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=*:*&fl=clue&start=0&rows=10&wt=xml} hits=9433 status=0 QTime=2
+2018-01-19 18:19:03.579 INFO  (qtp257513673-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=*:*&tv=true&tv.all=true&fl=clue&start=0&rows=10&wt=xml&tv.tf_idf=true} hits=9433 status=0 QTime=1
+2018-01-19 18:20:31.045 INFO  (qtp257513673-18) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&version=2.2} hits=9433 status=0 QTime=0
+2018-01-19 18:21:00.833 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&version=2.2&wf=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:21:12.182 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&version=2.2&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:22:24.767 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&version=2.2&wt=xml} hits=9433 status=0 QTime=1
+2018-01-19 18:25:54.098 INFO  (qtp257513673-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=0 status=0 QTime=0
+2018-01-19 18:26:11.167 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=LG&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=0 status=0 QTime=47
+2018-01-19 18:26:21.526 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=BPL&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=0 status=0 QTime=1
+2018-01-19 18:26:46.303 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=Hyundai&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=0 status=0 QTime=0
+2018-01-19 18:26:48.630 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=Hyundai&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=0 status=0 QTime=0
+2018-01-19 18:27:11.750 INFO  (qtp257513673-18) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=Hyundai+HS4G33.GCO-CM&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=0 status=0 QTime=11
+2018-01-19 18:27:54.594 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:29:14.165 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&rows=10&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:33:18.754 INFO  (qtp257513673-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=*:*&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:34:48.322 ERROR (qtp257513673-15) [   x:activities] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'clue:[* to *]': Encountered " <RANGE_GOOP> "to "" at line 1, column 8.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'clue:[* to *]': Encountered " <RANGE_GOOP> "to "" at line 1, column 8.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 8.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 37 more
+
+2018-01-19 18:34:48.323 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=clue:[*+to+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} status=400 QTime=2
+2018-01-19 18:35:09.061 ERROR (qtp257513673-12) [   x:activities] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'age:[* to *]': Encountered " <RANGE_GOOP> "to "" at line 1, column 7.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:269)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'age:[* to *]': Encountered " <RANGE_GOOP> "to "" at line 1, column 7.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:169)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 34 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "to "" at line 1, column 7.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:885)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:767)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:453)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 37 more
+
+2018-01-19 18:35:09.062 INFO  (qtp257513673-12) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+to+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} status=400 QTime=3
+2018-01-19 18:35:29.801 INFO  (qtp257513673-18) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} hits=9433 status=0 QTime=22
+2018-01-19 18:35:48.866 INFO  (qtp257513673-14) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=0
+2018-01-19 18:36:27.807 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&WT=XML} hits=9433 status=0 QTime=7
+2018-01-19 18:36:37.578 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&WT=XML} hits=9433 status=0 QTime=0
+2018-01-19 18:36:48.635 INFO  (qtp257513673-12) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=XML} hits=9433 status=0 QTime=0
+2018-01-19 18:36:56.692 INFO  (qtp257513673-21) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/select params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:38:25.277 ERROR (qtp257513673-19) [   x:activities] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: invalid boolean value: 
+	at org.apache.solr.common.util.StrUtils.parseBool(StrUtils.java:243)
+	at org.apache.solr.common.params.SolrParams.getBool(SolrParams.java:118)
+	at org.apache.solr.handler.component.TermVectorComponent.process(TermVectorComponent.java:156)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2018-01-19 18:38:25.277 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} hits=9433 status=400 QTime=1
+2018-01-19 18:40:25.160 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=1
+2018-01-19 18:42:19.317 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1920305914
+2018-01-19 18:42:19.317 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-01-19 18:42:19.317 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-01-19 18:42:19.317 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-01-19 18:42:19.323 INFO  (coreCloseExecutor-12-thread-1) [   x:activities] o.a.s.c.SolrCore [activities]  CLOSING SolrCore org.apache.solr.core.SolrCore@36b28ef0
+2018-01-19 18:42:19.323 INFO  (coreCloseExecutor-12-thread-1) [   x:activities] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.activities, tag=917671664

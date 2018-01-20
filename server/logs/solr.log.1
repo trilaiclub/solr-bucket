@@ -1,0 +1,96 @@
+2018-01-19 18:42:25.699 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.20.v20170531
+2018-01-19 18:42:26.864 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.2.0
+2018-01-19 18:42:26.865 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2018-01-19 18:42:26.865 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/vignesh/tac/solr-7.2.0
+2018-01-19 18:42:26.883 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2018-01-19T18:42:26.866769Z
+2018-01-19 18:42:26.885 INFO  (main) [   ] o.a.s.u.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2018-01-19 18:42:27.072 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/vignesh/tac/solr-7.2.0/server/solr
+2018-01-19 18:42:27.085 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/vignesh/tac/solr-7.2.0/server/solr/solr.xml
+2018-01-19 18:42:29.202 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/vignesh/tac/solr-7.2.0/server/solr
+2018-01-19 18:42:29.206 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [activities]
+2018-01-19 18:42:29.227 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2018-01-19 18:42:29.584 INFO  (main) [   ] o.e.j.s.Server Started @5937ms
+2018-01-19 18:42:29.595 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrResourceLoader [activities] Added 53 libs to classloader, from paths: [/home/vignesh/tac/solr-7.2.0/contrib/clustering/lib, /home/vignesh/tac/solr-7.2.0/contrib/extraction/lib, /home/vignesh/tac/solr-7.2.0/contrib/langid/lib, /home/vignesh/tac/solr-7.2.0/contrib/velocity/lib, /home/vignesh/tac/solr-7.2.0/dist]
+2018-01-19 18:42:30.286 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.2.0
+2018-01-19 18:42:30.812 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.IndexSchema [activities] Schema name=default-config
+2018-01-19 18:42:32.298 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2018-01-19 18:42:32.597 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.CoreContainer Creating SolrCore 'activities' using configuration from instancedir /home/vignesh/tac/solr-7.2.0/server/solr/activities, trusted=true
+2018-01-19 18:42:32.757 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2018-01-19 18:42:32.779 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.c.SolrCore [[activities] ] Opening new SolrCore at [/home/vignesh/tac/solr-7.2.0/server/solr/activities], dataDir=[/home/vignesh/tac/solr-7.2.0/server/solr/activities/data/]
+2018-01-19 18:42:32.874 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2018-01-19 18:42:33.575 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2018-01-19 18:42:33.575 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2018-01-19 18:42:33.609 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2018-01-19 18:42:33.610 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2018-01-19 18:42:33.860 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.SolrIndexSearcher Opening [Searcher@3fe2ff21[activities] main]
+2018-01-19 18:42:33.886 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/vignesh/tac/solr-7.2.0/server/solr/activities/conf
+2018-01-19 18:42:33.937 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2018-01-19 18:42:33.974 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2018-01-19 18:42:34.021 INFO  (coreLoadExecutor-6-thread-1) [   x:activities] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2018-01-19 18:42:34.168 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3fe2ff21[activities] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(7.2.0):C9433)))}
+2018-01-19 18:42:34.168 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2018-01-19 18:42:34.168 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2018-01-19 18:42:34.187 INFO  (searcherExecutor-7-thread-1-processing-x:activities) [   x:activities] o.a.s.c.SolrCore [activities] Registered new searcher Searcher@3fe2ff21[activities] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_b(7.2.0):C9433)))}
+2018-01-19 18:42:41.712 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /tvrh,class = solr.SearchHandler,attributes = {startup=lazy, name=/tvrh, class=solr.SearchHandler},args = {defaults={tv=true,df=_text_},last-components=[tvComponent]}} 
+2018-01-19 18:42:41.872 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=160
+2018-01-19 18:42:46.153 INFO  (qtp257513673-19) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=7
+2018-01-19 18:42:47.185 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=1
+2018-01-19 18:42:48.140 INFO  (qtp257513673-14) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=0
+2018-01-19 18:42:48.988 INFO  (qtp257513673-14) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=0
+2018-01-19 18:42:50.099 INFO  (qtp257513673-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10} hits=9433 status=0 QTime=0
+2018-01-19 18:43:41.016 INFO  (qtp257513673-17) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:45:09.695 INFO  (qtp257513673-14) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:45:13.554 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=6
+2018-01-19 18:50:02.749 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=2
+2018-01-19 18:50:04.062 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:50:04.991 INFO  (qtp257513673-14) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=1
+2018-01-19 18:50:05.894 INFO  (qtp257513673-16) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:50:06.765 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=1
+2018-01-19 18:50:07.541 INFO  (qtp257513673-20) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=0
+2018-01-19 18:50:08.465 INFO  (qtp257513673-12) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=true&indent=true&tv.payloads=true&tv.tf=true&tv.df=true&tv.offsets=true&tv.fl=clue&rows=10&tv.tf_idf=true&wt=xml} hits=9433 status=0 QTime=1
+2018-01-19 18:53:47.869 ERROR (qtp257513673-15) [   x:activities] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: invalid boolean value: 
+	at org.apache.solr.common.util.StrUtils.parseBool(StrUtils.java:243)
+	at org.apache.solr.common.params.SolrParams.getBool(SolrParams.java:118)
+	at org.apache.solr.handler.component.TermVectorComponent.process(TermVectorComponent.java:156)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:177)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2503)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:382)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:326)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1751)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:534)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:320)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:283)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:108)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2018-01-19 18:53:47.881 INFO  (qtp257513673-15) [   x:activities] o.a.s.c.S.Request [activities]  webapp=/solr path=/tvrh params={q=age:[*+TO+*]&tv=true&tv.positions=&qt=tvrh&indent=on&tv.tf=true&tv.df=true&start=0&tv.offsets=true&tv.fl=age&rows=10&wt=xml} hits=9433 status=400 QTime=15
+2018-01-19 18:54:37.228 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1920305914
+2018-01-19 18:54:37.228 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2018-01-19 18:54:37.229 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2018-01-19 18:54:37.229 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2018-01-19 18:54:37.233 INFO  (coreCloseExecutor-12-thread-1) [   x:activities] o.a.s.c.SolrCore [activities]  CLOSING SolrCore org.apache.solr.core.SolrCore@28921640
+2018-01-19 18:54:37.234 INFO  (coreCloseExecutor-12-thread-1) [   x:activities] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.activities, tag=680662592
