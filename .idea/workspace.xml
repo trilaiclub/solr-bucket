@@ -1,72 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c88d1ab0-4e51-414e-9b6a-acdfc876a9f0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/server/logs/archived/solr-8983-console.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/logs/archived/solr_gc.log" afterPath="$PROJECT_DIR$/server/logs/archived/solr_gc.log" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr-8983-console.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log" afterPath="$PROJECT_DIR$/server/logs/solr.log" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.1" afterPath="$PROJECT_DIR$/server/logs/solr.log.1" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.2" afterPath="$PROJECT_DIR$/server/logs/solr.log.2" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.3" afterPath="$PROJECT_DIR$/server/logs/solr.log.3" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.4" afterPath="$PROJECT_DIR$/server/logs/solr.log.4" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.5" afterPath="$PROJECT_DIR$/server/logs/solr.log.5" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.6" afterPath="$PROJECT_DIR$/server/logs/solr.log.6" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.7" afterPath="$PROJECT_DIR$/server/logs/solr.log.7" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.8" afterPath="$PROJECT_DIR$/server/logs/solr.log.8" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr.log.9" afterPath="$PROJECT_DIR$/server/logs/solr.log.9" />
-      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log" afterPath="$PROJECT_DIR$/server/logs/solr_gc.log" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/conf/managed-schema" afterPath="$PROJECT_DIR$/server/solr/activities/conf/managed-schema" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/conf/solrconfig.xml" afterPath="$PROJECT_DIR$/server/solr/activities/conf/solrconfig.xml" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/configoverlay.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/contractions_ca.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/contractions_fr.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/contractions_ga.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/contractions_it.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/hyphenations_ga.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stemdict_nl.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stoptags_ja.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_ar.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_bg.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_ca.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_cz.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_da.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_de.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_el.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_en.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_es.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_eu.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_fa.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_fi.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_fr.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_ga.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_gl.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_hi.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_hu.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_hy.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_id.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_it.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_ja.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_lv.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_nl.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_no.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_pt.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_ro.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_ru.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_sv.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_th.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/stopwords_tr.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/lang/userdict_ja.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/managed-schema" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/params.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/protwords.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/solrconfig.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/stopwords.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/conf/synonyms.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/core.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/data/index/segments_1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/tagger/data/index/write.lock" afterPath="" />
-    </list>
+    <list default="true" id="c88d1ab0-4e51-414e-9b6a-acdfc876a9f0" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -303,7 +238,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1375" height="773" extended-state="7" />
+    <frame x="65" y="-4" width="1375" height="904" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
