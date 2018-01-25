@@ -1205,6 +1205,13 @@
   <processor class="solr.RunUpdateProcessorFactory" />
   </updateRequestProcessorChain>
 
+  <requestHandler name="/tag" class="org.opensextant.solrtexttagger.TaggerRequestHandler">
+    <lst name="defaults">
+      <str name="field">clue</str>
+      <str name="overlaps">LONGEST_DOMINANT_RIGHT</str>
+    </lst>
+  </requestHandler>
+
   <!-- Reco ends -->
   <!-- Deduplication
 
@@ -1268,6 +1275,27 @@
       <processor class="solr.RunUpdateProcessorFactory" />
     </updateRequestProcessorChain>
   -->
+
+  <!-- Reco changes begins -->
+  <updateRequestProcessorChain name="process-dwords">
+    <processor class="reco.solrplugin.SimpleDwordsProcessorFactory"/>
+    <processor class="solr.LogUpdateProcessorFactory" />
+    <processor class="solr.DistributedUpdateProcessorFactory" />
+    <processor class="solr.RunUpdateProcessorFactory" />
+  </updateRequestProcessorChain>
+  <updateRequestProcessorChain name="process-default">
+    <processor class="solr.LogUpdateProcessorFactory" />
+    <processor class="solr.DistributedUpdateProcessorFactory" />
+    <processor class="solr.RunUpdateProcessorFactory" />
+  </updateRequestProcessorChain>
+
+  <initParams path="/update/**,/query,/select,/tvrh,/elevate,/spell,/browse">
+    <lst name="defaults">
+      <str name="df">text</str>
+      <str name="update.chain">process-dwords</str>
+    </lst>
+  </initParams>
+  <!-- Reco changes end -->
 
   <!-- Response Writers
 

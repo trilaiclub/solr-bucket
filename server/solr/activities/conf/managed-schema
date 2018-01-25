@@ -109,6 +109,7 @@
          WARNING: The _text_ catch-all field will significantly increase your index size.
          If you don't need it, consider removing it and the corresponding copyField directive.
     -->
+    <!--Reco changes begins -->
 
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
     <!-- docValues are enabled by default for long type so we don't need to index the version field  -->
@@ -116,17 +117,34 @@
     <field name="_root_" type="string" indexed="true" stored="false" docValues="false" />
     <field name="_text_" type="text_general" indexed="true" stored="false" multiValued="true"/>
 
+
     <!-- Reco User defined attributes Begins-->
-    <field name="userid" type="string" indexed="true" stored="true" required="true" />
-    <field name="action" type="string" indexed="true" stored="true" required="true" />
-    <field name="clue" type="string" indexed="true" stored="true" required="true" termVectors="true" termPositions="true" termOffsets="true" />
-    <field name="category" type="string" indexed="false" stored="true" required="true" />
-    <field name="tokens" type="text_general" indexed="false" stored="true" required="false" />
-    <field name="age" type="pint" indexed="true" stored="true" required="true" />
-    <field name="when" type="pdate" indexed="true" stored="true" required="true" />
-    
-    
+        <fieldType name="tag" class="solr.TextField" positionIncrementGap="100" postingsFormat="Memory" omitTermFreqAndPositions="true" omitNorms="true">
+          <analyzer type="index">
+            <tokenizer class="solr.StandardTokenizerFactory"/>
+            <filter class="solr.EnglishPossessiveFilterFactory" />
+            <filter class="solr.ASCIIFoldingFilterFactory"/>
+            <filter class="solr.LowerCaseFilterFactory" />
+            <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt"/>
+            <filter class="org.opensextant.solrtexttagger.ConcatenateFilterFactory" />
+          </analyzer>
+          <analyzer type="query">
+        	<tokenizer class="solr.StandardTokenizerFactory"/>
+        	<filter class="solr.EnglishPossessiveFilterFactory" />
+        	<filter class="solr.ASCIIFoldingFilterFactory"/>
+        	<filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt"/>
+        	<filter class="solr.LowerCaseFilterFactory" />
+          </analyzer>
+        </fieldType>
+        <field name="userid" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+        <field name="action" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+        <field name="clue" type="text_general" multiValued="false" indexed="true" stored="true" required="true" termVectors="true" termPositions="true" termOffsets="true" />
+        <field name="category" type="text_general" indexed="false" stored="true" required="true" multiValued="false"/>
+        <field name="tokens" type="tag" indexed="false" stored="true" required="false" multiValued="true"/>
+        <field name="age" type="pint" indexed="true" stored="true" required="true" multiValued="false"/>
+        <field name="when" type="pdate" indexed="true" stored="true" required="true" multiValued="false"/>
     <!-- Reco User defined attributes End-->
+
     <!-- This can be enabled, in case the client does not know what fields may be searched. It isn't enabled by default
          because it's very expensive to index everything twice. -->
     <!-- <copyField source="*" dest="_text_"/> -->
