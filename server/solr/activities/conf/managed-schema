@@ -138,9 +138,9 @@
         </fieldType>
         <field name="userid" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
         <field name="action" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
-        <field name="clue" type="text_general" multiValued="false" indexed="true" stored="true" required="true" termVectors="true" termPositions="true" termOffsets="true" />
-        <field name="category" type="text_general" indexed="false" stored="true" required="true" multiValued="false"/>
-        <field name="tokens" type="tag" indexed="false" stored="true" required="false" multiValued="true"/>
+        <field name="clue" type="text_general" multiValued="false" indexed="false" stored="true" required="true"/>
+        <field name="category" type="text_general" indexed="true" stored="true" required="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
+        <field name="tokens" type="tag" indexed="true" stored="true" required="false" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
         <field name="age" type="pint" indexed="true" stored="true" required="true" multiValued="false"/>
         <field name="when" type="pdate" indexed="true" stored="true" required="true" multiValued="false"/>
     <!-- Reco User defined attributes End-->
@@ -153,7 +153,7 @@
        for fields via the specification of patterns to match field names.
        EXAMPLE:  name="*_i" will match any field ending in _i (like myid_i, z_i)
        RESTRICTION: the glob-like pattern in the name attribute must have a "*" only at the start or the end.  -->
-   
+    <dynamicField name="*_err"  type="string" indexed="true" stored="true"/>
     <dynamicField name="*_i"  type="pint"    indexed="true"  stored="true"/>
     <dynamicField name="*_is" type="pints"    indexed="true"  stored="true"/>
     <dynamicField name="*_s"  type="string"  indexed="true"  stored="true" />

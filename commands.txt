@@ -1,0 +1,3 @@
+Truncate:
+
+<delete><query>*:*</query></delete>
