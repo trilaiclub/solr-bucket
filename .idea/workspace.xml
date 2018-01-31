@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c88d1ab0-4e51-414e-9b6a-acdfc876a9f0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/bin/solr-8983.pid" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/contrib/extraction/lib/DwordsProcessor.jar" afterPath="$PROJECT_DIR$/contrib/extraction/lib/DwordsProcessor.jar" />
       <change beforePath="$PROJECT_DIR$/server/logs/archived/solr_gc.log" afterPath="$PROJECT_DIR$/server/logs/archived/solr_gc.log" />
       <change beforePath="$PROJECT_DIR$/server/logs/solr.log" afterPath="$PROJECT_DIR$/server/logs/solr.log" />
       <change beforePath="$PROJECT_DIR$/server/logs/solr.log.1" afterPath="$PROJECT_DIR$/server/logs/solr.log.1" />
@@ -17,63 +15,103 @@
       <change beforePath="$PROJECT_DIR$/server/logs/solr.log.8" afterPath="$PROJECT_DIR$/server/logs/solr.log.8" />
       <change beforePath="$PROJECT_DIR$/server/logs/solr.log.9" afterPath="$PROJECT_DIR$/server/logs/solr.log.9" />
       <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log" afterPath="$PROJECT_DIR$/server/logs/solr_gc.log" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.0" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.1" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.5" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.6" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.7" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/logs/solr_gc.log.8" afterPath="" />
       <change beforePath="$PROJECT_DIR$/server/solr/activities/conf/managed-schema" afterPath="$PROJECT_DIR$/server/solr/activities/conf/managed-schema" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/conf/solrconfig.xml" afterPath="$PROJECT_DIR$/server/solr/activities/conf/solrconfig.xml" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/core.properties" afterPath="$PROJECT_DIR$/server/solr/activities/core.properties" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/activities-min.json" afterPath="$PROJECT_DIR$/server/solr/activities/data/activities-min.json" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/activities.json" afterPath="$PROJECT_DIR$/server/solr/activities/data/activities.json" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/activities.jsonl" afterPath="$PROJECT_DIR$/server/solr/activities/data/activities.jsonl" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b.dii" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b.dim" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b.fdt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b.fdx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b.fnm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b_Lucene50_0.doc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b_Lucene50_0.tim" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b_Lucene50_0.tip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b_Lucene70_0.dvd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_b_Lucene70_0.dvm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/segments_g" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/tlog/tlog.0000000000000000017" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/core.properties" afterPath="$PROJECT_DIR$/server/solr/dwords/core.properties" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/dwords-min.json" afterPath="$PROJECT_DIR$/server/solr/dwords/data/dwords-min.json" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/dwords.json" afterPath="$PROJECT_DIR$/server/solr/dwords/data/dwords.json" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/dwords.jsonl" afterPath="$PROJECT_DIR$/server/solr/dwords/data/dwords.jsonl" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.dii" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.dii" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.dim" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.dim" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.fdt" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.fdt" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.fdx" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.fdx" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.fnm" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.fnm" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.nvd" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.nvd" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.nvm" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.nvm" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.si" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.si" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.tvd" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.tvd" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.tvx" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0.tvx" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.doc" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.doc" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.pos" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.pos" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.tim" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.tim" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.tip" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene50_0.tip" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene70_0.dvd" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene70_0.dvd" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene70_0.dvm" afterPath="$PROJECT_DIR$/server/solr/dwords/data/index/_0_Lucene70_0.dvm" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.dii" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.dim" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.fdt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.fdx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.fnm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.nvd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.nvm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.si" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.tvd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1.tvx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1_Lucene50_0.doc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1_Lucene50_0.pos" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1_Lucene50_0.tim" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1_Lucene50_0.tip" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1_Lucene70_0.dvd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/_1_Lucene70_0.dvm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/index/segments_3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/server/solr/dwords/data/tlog/tlog.0000000000000000001" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.dii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.dim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.fdt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.fdx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.fnm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.nvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.nvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.tvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u.tvx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Lucene50_0.doc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Lucene50_0.pos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Lucene50_0.tim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Lucene50_0.tip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Lucene70_0.dvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Lucene70_0.dvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2u_Memory_0.ram" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.dii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.dim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.fdt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.fdx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.fnm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.nvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.nvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.tvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v.tvx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Lucene50_0.doc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Lucene50_0.pos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Lucene50_0.tim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Lucene50_0.tip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Lucene70_0.dvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Lucene70_0.dvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2v_Memory_0.ram" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.dii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.dim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.fdt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.fdx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.fnm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.nvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.nvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.tvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w.tvx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Lucene50_0.doc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Lucene50_0.pos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Lucene50_0.tim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Lucene50_0.tip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Lucene70_0.dvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Lucene70_0.dvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2w_Memory_0.ram" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.dii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.dim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.fdt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.fdx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.fnm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.nvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.nvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.tvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x.tvx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Lucene50_0.doc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Lucene50_0.pos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Lucene50_0.tim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Lucene50_0.tip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Lucene70_0.dvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Lucene70_0.dvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2x_Memory_0.ram" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.dii" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.dim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.fdt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.fdx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.fnm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.nvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.nvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.si" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.tvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y.tvx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Lucene50_0.doc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Lucene50_0.pos" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Lucene50_0.tim" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Lucene50_0.tip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Lucene70_0.dvd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Lucene70_0.dvm" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/_2y_Memory_0.ram" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/index/segments_1q" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/server/solr/activities/data/tlog/tlog.0000000000000000060" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -90,8 +128,8 @@
       <file leaf-file-name="managed-schema" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/solr/activities/conf/managed-schema">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="141" column="49" lean-forward="false" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
+            <state relative-caret-position="735">
+              <caret line="155" column="49" lean-forward="false" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -112,8 +150,9 @@
       <find>UPdateP</find>
       <find>uuid</find>
       <find>UUID</find>
-      <find>Reco</find>
       <find>process-</find>
+      <find>Simple</find>
+      <find>Reco</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -281,7 +320,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -360,16 +398,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/solr/activities/conf/solrconfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3244">
-          <caret line="1229" column="22" lean-forward="false" selection-start-line="1229" selection-start-column="22" selection-end-line="1229" selection-end-column="22" />
+        <state relative-caret-position="238">
+          <caret line="1198" column="11" lean-forward="false" selection-start-line="1198" selection-start-column="7" selection-end-line="1198" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/solr/activities/conf/managed-schema">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="141" column="49" lean-forward="false" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
+        <state relative-caret-position="735">
+          <caret line="155" column="49" lean-forward="false" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
           <folding />
         </state>
       </provider>

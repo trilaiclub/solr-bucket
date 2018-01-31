@@ -121,6 +121,9 @@
     <!-- Reco User defined attributes Begins-->
         <fieldType name="tag" class="solr.TextField" positionIncrementGap="100" postingsFormat="Memory" omitTermFreqAndPositions="true" omitNorms="true">
           <analyzer type="index">
+            <charFilter class="solr.PatternReplaceCharFilterFactory"
+                                pattern=" "
+                                replacement="_"/>
             <tokenizer class="solr.StandardTokenizerFactory"/>
             <filter class="solr.EnglishPossessiveFilterFactory" />
             <filter class="solr.ASCIIFoldingFilterFactory"/>
@@ -129,6 +132,9 @@
             <filter class="org.opensextant.solrtexttagger.ConcatenateFilterFactory" />
           </analyzer>
           <analyzer type="query">
+            <charFilter class="solr.PatternReplaceCharFilterFactory"
+                                pattern="_"
+                                replacement=" "/>
         	<tokenizer class="solr.StandardTokenizerFactory"/>
         	<filter class="solr.EnglishPossessiveFilterFactory" />
         	<filter class="solr.ASCIIFoldingFilterFactory"/>
@@ -139,7 +145,7 @@
         <field name="userid" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
         <field name="action" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
         <field name="clue" type="text_general" multiValued="false" indexed="false" stored="true" required="true"/>
-        <field name="category" type="text_general" indexed="true" stored="true" required="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
+        <field name="category" type="tag" indexed="true" stored="true" required="true" multiValued="false" termVectors="true" termPositions="true" termOffsets="true"/>
         <field name="tokens" type="tag" indexed="true" stored="true" required="false" multiValued="true" termVectors="true" termPositions="true" termOffsets="true"/>
         <field name="age" type="pint" indexed="true" stored="true" required="true" multiValued="false"/>
         <field name="when" type="pdate" indexed="true" stored="true" required="true" multiValued="false"/>
